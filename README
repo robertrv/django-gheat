@@ -1,1 +1,3 @@
-This is a simple project to port gheat in a django based pluggable
+This is a simple project to port gheat in a django based pluggable.
+
+The main source code is based on http://code.google.com/p/gheat/

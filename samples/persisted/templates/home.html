@@ -18,7 +18,7 @@
         heatmap = new GTileLayer(copyrights, 10, 0);
         heatmap.getTileUrl = function (tile, zoom) {
             base = 'http://127.0.0.1:8000/gheat/';
-            color_scheme = 'fire';
+            color_scheme = 'firetrans';
             url = base + color_scheme +'/'+ zoom +'/'
             url += tile.x +','+ tile.y +'.png';
             return url;
@@ -28,8 +28,8 @@
     
         function initialize () {
             var map = new GMap2(document.getElementById("map"));
-            var lebanon = new GLatLng(39.81447,-98.565388);
-            map.setCenter(lebanon, 4);
+            var lebanon = new GLatLng(52.390268,4.890976);
+            map.setCenter(lebanon, 8);
             map.addOverlay(new GTileLayerOverlay(heatmap));
         }
     

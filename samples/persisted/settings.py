@@ -82,6 +82,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'gheat',
+    'django_extensions',
+    'home',
 )
 
 #GOOGLE_MAPS_KEY = 'ABQIAAAA2icoFs7d_hisx8EBdZy-mxQF3fr7joqA35-x6JbT4Kx-pk-_6xRkPVambEqUO33n_8g9KWVaLKq8UA' # localhost

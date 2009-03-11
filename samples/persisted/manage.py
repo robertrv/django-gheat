@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 from django.core.management import execute_manager
 import sys
-from os.path import dirname, abspath
+from os.path import dirname, abspath, join
 
 # Importing gheat folder to be more easy to test this application. In a real 
 # application should be done with python_path
 sys.path.append(dirname(dirname(dirname(abspath(__file__)))))
+
+# Importing also django extenions
+
+sys.path.append(join(dirname(dirname(dirname(abspath(__file__)))),'external','django-extensions'))
 
 
 try:
